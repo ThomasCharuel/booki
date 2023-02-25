@@ -38,8 +38,46 @@ main h3 {
     font-size: 16px;
 }
 
-#homes-section, #experiences-section {
-    margin-bottom: 80px;
+.blue-icon {
+    color: var(--blue);
+}
+
+#homes-section-container, #experiences-section {
+    margin-bottom: 60px;
+}
+
+/**********************
+CSS Homes Section 
+**********************/
+#homes-section-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#homes-section, #popular-homes-section {
+    background-color: var(--grey);
+    border-radius: 20px;
+    padding: 40px;
+
+    width: 400px; /* TEMP */
+}
+
+#load-more-homes-button {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-size: 18px;
+    font-style: inherit;
+    font-weight: bold;
+    line-height: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+#popular-homes-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /**********************
