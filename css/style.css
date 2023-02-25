@@ -1,3 +1,53 @@
+:root {
+    /* Declare global variables */
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box; /* Ease element sizing handling. See: https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing */ 
+    max-width: 1400px;
+    margin: auto;
+
+    /* Make footer stick at the bottom of web page */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+ul.reset {
+    padding: 0;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: var(--grey);
+    display: flex;
+}
+
+.footer-section {
+    flex-basis: 100%; /* Footer section will have same width */
+    padding: 40px 80px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+}
+
+.footer-link {
+    color: unset;
+    text-decoration: unset;
+    line-height: 1.8em;
+}
+
+
