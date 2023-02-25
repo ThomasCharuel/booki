@@ -30,13 +30,65 @@ main {
     flex-grow: 1;
 }
 
+main h2 {
+    font-size: 22px;
+}
+
+main h3 {
+    font-size: 16px;
+}
+
+#homes-section, #experiences-section {
+    margin-bottom: 80px;
+}
+
+/**********************
+CSS Experiences Section 
+**********************/
+#experiences-listing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.experience-card {
+    width: 300px;
+    height: 445px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card .card-image {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title-container {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.experience-card .card-title {
+    padding-left: 20px;
+}
+
+/*********
+CSS Footer 
+*********/
 footer {
     background-color: var(--grey);
     display: flex;
 }
 
 .footer-section {
-    flex-basis: 100%; /* Footer section will have same width */
+    flex-basis: 100%; /* Footer sections have same width */
     padding: 40px 80px;
 }
 
