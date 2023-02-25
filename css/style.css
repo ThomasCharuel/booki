@@ -42,6 +42,38 @@ main h3 {
     color: var(--blue);
 }
 
+/**********************
+CSS Header Section 
+**********************/
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#booki-logo-navbar img{
+    padding-top: 30px;
+    height: 30px;
+}
+
+#navbar-links-container {
+    display: flex;
+    padding-top: 46px;
+    margin-top: 2px;
+}
+
+.navbar-link {
+    color: unset;
+    text-decoration: unset;
+    font-size: 16px;
+    padding: 46px;
+}
+
+.navbar-link:hover {
+    color: var(--blue);
+    border-top: 2px solid var(--blue);
+}
+
 #homes-section-container, #experiences-section {
     margin-bottom: 60px;
 }
