@@ -206,8 +206,15 @@ CSS Homes Section
     background-color: var(--grey);
     border-radius: 20px;
     padding: 40px;
+}
 
-    width: 400px; /* TEMP */
+#homes-section {
+    width: 56%;
+    margin-right: 20px;
+}
+
+#popular-homes-section {
+    width: 30%;
 }
 
 #load-more-homes-button {
