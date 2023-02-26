@@ -57,21 +57,19 @@ CSS Header Section
 }
 
 #booki-logo-navbar img{
-    padding-top: 30px;
-    height: 30px;
+    height: 29px;
 }
 
 #navbar-links-container {
     display: flex;
-    padding-top: 46px;
-    margin-top: 2px;
+    margin: 48px 0px;
 }
 
 .navbar-link {
     color: unset;
     text-decoration: unset;
     font-size: 16px;
-    padding: 46px;
+    padding: 46px 33px;
 }
 
 .navbar-link:hover {
