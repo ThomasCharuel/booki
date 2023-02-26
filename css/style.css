@@ -218,7 +218,6 @@ CSS Homes Section
     width: 56%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #homes-listing {
@@ -251,6 +250,12 @@ CSS Homes Section
     padding: 9px 16px 6px;
 }
 
+#load-more-homes-button-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
 #load-more-homes-button {
     background-color: transparent;
     border: unset;
@@ -261,7 +266,6 @@ CSS Homes Section
     line-height: inherit;
     padding: 0;
     cursor: pointer;
-    align-self: flex-start;
 }
 
 #popular-homes-section {
