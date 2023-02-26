@@ -35,8 +35,16 @@ main h3 {
     font-size: 16px;
 }
 
+main p {
+    font-size: 14px;
+}
+
 .blue-icon {
     color: var(--blue);
+}
+
+.grey-icon {
+    color: var(--grey);
 }
 
 /**********************
@@ -213,10 +221,6 @@ CSS Homes Section
     margin-right: 20px;
 }
 
-#popular-homes-section {
-    width: 30%;
-}
-
 #load-more-homes-button {
     background-color: transparent;
     border-width: 0;
@@ -229,10 +233,45 @@ CSS Homes Section
     cursor: pointer;
 }
 
+#popular-homes-section {
+    width: 30%;
+}
+
 #popular-homes-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.popular-home-card {
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+    display: flex;
+    overflow: hidden;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.popular-home-card + .popular-home-card {
+    margin-top: 33px;
+}
+
+.popular-home-card .card-image {
+    height: 144px;
+    width: 137px;
+    object-fit: cover;
+}
+
+.popular-home-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 15px 7px;
+}
+
+.popular-home-card-header h3{
+    margin-top: 0px;
 }
 
 /**********************
@@ -253,6 +292,10 @@ CSS Experiences Section
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.experience-card + .experience-card {
+    margin-left: 20px;
 }
 
 .experience-card .card-image {
