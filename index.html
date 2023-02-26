@@ -27,11 +27,29 @@
     </header>
 
     <main>
+        <section id="filters-section">
+            <div id="searchbox-container">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div id="filters-container">
+                <h2 id="filters-title">Filtres</h2>
+                <ul id="filters-list" class="reset">
+                    <li><button class="filter-button"><i class="fa-solid fa-money-bill-wave blue-icon"></i><span class="filter-text">Économique</span></button></li>
+                    <li><button class="filter-button"><i class="fa-solid fa-person blue-icon"></i><span class="filter-text">Familial</span></button></li>
+                    <li><button class="filter-button"><i class="fa-solid fa-heart blue-icon"></i><span class="filter-text">Romantique</span></button></li>
+                    <li><button class="filter-button"><i class="fa-solid fa-dog blue-icon"></i><span class="filter-text">Animaux autorisés</span></button></li>
+                </ul>
+            </div>
+            <div id="filters-result-info-container">
+                <i class="fa-solid fa-info fa-xs blue-icon"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
         <section id="homes-section-container">
             <section id="homes-section">
                 <h2>Hébergements à Marseille</h2>
                 <ul id="homes-listing" class="reset">
-                    <li class="home-card"></li>
+                    <li class="home-card"><i class="fa-solid fa-star"></i></li>
                 </ul>
                 <button id="load-more-homes-button">Afficher plus</button>
             </section>
