@@ -50,6 +50,10 @@ main p {
 /**********************
 CSS Header Section 
 **********************/
+#main-header {
+    padding: 0px 5px;
+}
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -79,7 +83,6 @@ CSS Header Section
 
 h1 {
     font-size: 22px;
-    margin-top: 50px;
 }
 
 #title-description-text {
@@ -90,6 +93,10 @@ h1 {
 /**********************
 CSS Filters Section 
 **********************/
+#filters-section {
+    margin: 37px 5px;
+}
+
 #searchbox-container {
     margin-top: 20px;
     margin-bottom: 32px;
@@ -148,7 +155,7 @@ CSS Filters Section
 
 #filters-title {
     font-size: 18px;
-    margin-right: 10px;
+    margin-right: 32px;
 }
 
 #filters-list {
@@ -182,6 +189,10 @@ CSS Filters Section
     align-items: center;
 }
 
+#filters-result-info-container p {
+    font-size: 16px;
+}
+
 #filters-result-info-container i {
     border-radius: 50%;
     width: 20px;
@@ -190,7 +201,7 @@ CSS Filters Section
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 18px;
+    margin-right: 11px;
 }
 
 /**********************
@@ -200,10 +211,18 @@ CSS Homes Section
     margin-bottom: 60px;
 }
 
+.euro-symbol {
+    font-weight: 600;
+}
+
 #homes-section-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
+}
+
+#homes-section-container .fa-star {
+    font-size: 12px;
 }
 
 #homes-section, #popular-homes-section {
@@ -213,7 +232,6 @@ CSS Homes Section
 }
 
 #homes-section {
-    width: 56%;
     display: flex;
     flex-direction: column;
 }
@@ -249,7 +267,7 @@ CSS Homes Section
 }
 
 #load-more-homes-button-container {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     align-items: flex-end;
 }
@@ -266,10 +284,6 @@ CSS Homes Section
     cursor: pointer;
 }
 
-#popular-homes-section {
-    width: 30%;
-}
-
 #popular-homes-header-container {
     display: flex;
     justify-content: space-between;
@@ -283,6 +297,7 @@ CSS Homes Section
 }
 
 .popular-home-card {
+    flex: 1;
     background-color: white;
     border-radius: 20px;
     border: 5px solid white;
@@ -293,8 +308,8 @@ CSS Homes Section
 }
 
 .popular-home-card .card-image {
+    width: 137px;
     height: 144px;
-    width: 138px;
     object-fit: cover;
 }
 
@@ -302,7 +317,7 @@ CSS Homes Section
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 16px 15px 7px;
+    margin: 16px 22px 7px 15px;
 }
 
 #homes-section-container h3{
@@ -319,12 +334,12 @@ CSS Experiences Section
 #experiences-listing {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
     gap: 43px;
 }
 
 .experience-card {
-    width: 300px;
+    flex: 1;
     height: 445px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -344,10 +359,7 @@ CSS Experiences Section
     flex: 1 1 auto;
     display: flex;
     align-items: center;
-}
-
-.experience-card .card-title {
-    padding-left: 20px;
+    padding-left: 19px;
 }
 
 /*********
@@ -356,19 +368,22 @@ CSS Footer
 footer {
     background-color: var(--grey);
     display: flex;
+    padding: 45px 70px;
+    gap: 30px;
 }
 
 .footer-section {
     flex-basis: 100%; /* Footer sections have same width */
-    padding: 40px 80px;
 }
 
 .footer-section h2 {
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .footer-link {
     color: unset;
     text-decoration: unset;
     line-height: 1.8em;
+    font-size: 16px;
 }
