@@ -84,6 +84,57 @@ h1 {
 /**********************
 CSS Filters Section 
 **********************/
+#searchbox-container {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+#location-searchbox-label {
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
+    border-radius: 15px 0px 0px 15px;
+    height: 49px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-searchbox-text-input {
+    border: unset;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    font-family: inherit;
+    font-size: 18px;
+    font-style: inherit;
+    font-weight: bold;
+    height: 49px;
+    padding: 0px 16px;
+}
+
+#location-searchbox-submit-button {
+    background-color: var(--blue);
+    color: white;
+    border: unset;
+    border-radius: 0px 15px 15px 0px;
+    font-family: inherit;
+    font-size: 18px;
+    font-style: inherit;
+    font-weight: bold;
+    height: 51px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+}
+
+#location-searchbox-submit-button-icon {
+    display: none; 
+}
+
 #filters-container {
     display: flex;
     align-items: center;

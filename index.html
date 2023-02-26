@@ -28,9 +28,14 @@
 
     <main>
         <section id="filters-section">
-            <div id="searchbox-container">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
+            <form id="searchbox-container" method="get" action="">
+                <label id="location-searchbox-label" for="location-searchbox-text-input"><i class="fa-solid fa-location-dot"></i></label>
+                <input type="text" name="location-searchbox-text-input" id="location-searchbox-text-input" value="Marseille, France">
+                <button type="submit" id="location-searchbox-submit-button">
+                    <i id="location-searchbox-submit-button-icon" class="fa-solid fa-magnifying-glass"></i>
+                    <span id="location-searchbox-submit-button-text">Rechercher</span>
+                </button>
+            </form>
             <div id="filters-container">
                 <h2 id="filters-title">Filtres</h2>
                 <ul id="filters-list" class="reset">
