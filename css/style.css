@@ -352,7 +352,7 @@ CSS Experiences Section
 }
 
 .experience-card .card-image {
-    height: 100%;
+    height: calc(100% - 20px); /* Trick to avoid sight of clipped image at bottom corners in chrome */
     width: 100%;
     object-fit: cover;
 }
