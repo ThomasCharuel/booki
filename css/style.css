@@ -82,6 +82,7 @@ CSS Header Section
 
 .navbar-link:hover {
     color: var(--blue);
+    font-weight: 500;
     border-top: 2px solid var(--blue);
 }
 
@@ -486,5 +487,59 @@ footer {
 
 /** Mobile Screen **/
 @media screen and (max-width: 992px) {
+    body {
+        max-width: unset;
+    }
+    /**********************
+    CSS Header Section 
+    **********************/
+    #main-header {
+        padding: 21px 0px 31px;
+    }
 
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar-links-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 38px 0px 23px;
+    }
+
+    .navbar-link {
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 23px;
+    }
+
+    .navbar-link:hover {
+        border: unset;
+        border-bottom: 3px solid var(--blue);
+    }
+
+    /**********************
+    CSS Filters Section 
+    **********************/
+
+    /**********************
+    CSS Homes Section 
+    **********************/
+
+    /**********************
+    CSS Experiences Section 
+    **********************/
+
+    /*********
+    CSS Footer 
+    *********/
+    footer {
+        flex-direction: column;
+        padding: 35px 29px 61px;
+    }
+
+    .footer-section {
+        flex-basis: unset;
+    }
 }
