@@ -348,21 +348,24 @@ CSS Experiences Section
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .experience-card .card-image {
-    height: 380px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 .card-title-container {
-    flex: 1 1 auto;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 19px;
     display: flex;
     align-items: center;
-    padding-left: 19px;
 }
 
 /*********
@@ -440,14 +443,11 @@ footer {
     **********************/
     #experiences-listing {
         margin-top: 34px;
+        gap: 50px;
     }
 
     .experience-card {
         height: 267px;
-    }
-
-    .experience-card .card-image {
-        height: 211px;
     }
 }
 
