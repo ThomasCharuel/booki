@@ -29,6 +29,7 @@ main {
 
 main h2 {
     font-size: 22px;
+    margin: 0px;
 }
 
 main h3 {
@@ -86,7 +87,7 @@ h1 {
 }
 
 #title-description-text {
-    margin-top: 8px;
+    margin: 8px 0px;
     font-size: 16px;
 }
 
@@ -94,7 +95,7 @@ h1 {
 CSS Filters Section 
 **********************/
 #filters-section {
-    margin: 37px 5px;
+    margin: 0px 5px 37px;
 }
 
 #searchbox-container {
@@ -237,6 +238,7 @@ CSS Homes Section
 }
 
 #homes-listing {
+    margin: 23px 0px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -291,6 +293,7 @@ CSS Homes Section
 }
 
 #popular-homes-listing {
+    margin-top: 26px;
     display: flex;
     flex-direction: column;
     gap: 33px;
@@ -391,4 +394,64 @@ footer {
     color: unset;
     text-decoration: unset;
     font-size: 16px;
+}
+
+/** Tablet Screen **/
+@media screen and (max-width: 1024px) {
+    body {
+        max-width: 880px;
+    }
+    /**********************
+    CSS Filters Section 
+    **********************/
+    #filters-title {
+        margin-right: 17px;
+    }
+
+    #filters-list {
+        gap: 22px;
+    }
+
+    /**********************
+    CSS Homes Section 
+    **********************/
+    #homes-section-container {
+        grid-template-columns: 1fr;
+        gap: 53px;
+    }
+
+    #popular-homes-listing {
+        margin: 26px 0px 8px;
+        flex-direction: row;
+        gap: 23px;
+    }
+
+    .popular-home-card .card-image {
+        width: 106px;
+        height: 144px;
+    }
+
+    .popular-home-info-container {
+        margin: 10px 12px 4px 10px;
+    }
+
+    /**********************
+    CSS Experiences Section 
+    **********************/
+    #experiences-listing {
+        margin-top: 34px;
+    }
+
+    .experience-card {
+        height: 267px;
+    }
+
+    .experience-card .card-image {
+        height: 211px;
+    }
+}
+
+/** Mobile Screen **/
+@media screen and (max-width: 992px) {
+
 }
