@@ -371,9 +371,12 @@ CSS Experiences Section
     background-color: white;
     position: absolute;
     bottom: 0;
-    padding: 0px 19px;
     display: flex;
     align-items: center;
+}
+
+.card-title-container h3 {
+    padding: 0px 19px;
 }
 
 /*********
