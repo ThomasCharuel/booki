@@ -23,6 +23,11 @@ ul.reset {
     list-style-type: none;
 }
 
+a.reset {
+    color: unset;
+    text-decoration: unset;
+}
+
 main {
     flex-grow: 1;
 }
@@ -71,8 +76,6 @@ CSS Header Section
 }
 
 .navbar-link {
-    color: unset;
-    text-decoration: unset;
     font-size: 16px;
     padding: 46px 33px;
 }
@@ -248,10 +251,13 @@ CSS Homes Section
     background-color: white;
     border-radius: 20px;
     border: 5px solid white;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.home-card-link {
+    display: flex;
+    flex-direction: column;
 }
 
 .home-card .card-image {
@@ -303,9 +309,12 @@ CSS Homes Section
     background-color: white;
     border-radius: 20px;
     border: 5px solid white;
-    display: flex;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.popular-home-card-link {
+    display: flex;
 }
 
 .popular-home-card .card-image {
