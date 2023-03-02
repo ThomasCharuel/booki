@@ -308,8 +308,11 @@ CSS Homes Section
     gap: 33px;
 }
 
-.popular-home-card {
+#popular-homes-listing > li {
     flex: 1;
+}
+
+.popular-home-card {
     background-color: white;
     border-radius: 20px;
     border: 5px solid white;
@@ -352,8 +355,11 @@ CSS Experiences Section
     gap: 43px;
 }
 
-.experience-card {
+#experiences-listing li {
     flex: 1;
+}
+
+.experience-card {
     height: 445px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -412,30 +418,8 @@ footer {
     font-size: 16px;
 }
 
-/** Small Desktop Screen **/
-@media screen and (max-width: 1450px) {
-    body {
-        max-width: 90%;
-    }
-}
-
-/** Small Desktop Screen **/
-@media screen and (max-width: 1280px) {
-    body {
-        max-width: 98%;
-    }
-
-    #homes-section, #popular-homes-section {
-        padding: 40px 10px;
-    }
-
-    #homes-section-container, #popular-homes-listing, #homes-listing {
-        gap: 10px;
-    }
-}
-
 /** Tablet Screen **/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
     body {
         max-width: 880px;
     }
@@ -487,7 +471,7 @@ footer {
 }
 
 /** Mobile Screen **/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
     body {
         max-width: unset;
     }
