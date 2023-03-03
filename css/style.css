@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: 0px 3vw;
 }
 
 ul.reset {
@@ -423,9 +424,6 @@ footer {
 
 /** Tablet Screen **/
 @media screen and (max-width: 991px) {
-    body {
-        max-width: 880px;
-    }
     /**********************
     CSS Filters Section 
     **********************/
@@ -471,7 +469,7 @@ footer {
 /** Mobile Screen **/
 @media screen and (max-width: 767px) {
     body {
-        max-width: unset;
+        padding: unset;
     }
     /**********************
     CSS Header Section 
