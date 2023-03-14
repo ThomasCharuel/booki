@@ -427,12 +427,21 @@ footer {
     /**********************
     CSS Filters Section 
     **********************/
+    #filters-container {
+        flex-wrap: wrap;
+    }
+
     #filters-title {
         margin-right: 17px;
     }
 
     #filters-list {
+        align-items: stretch;
         gap: 22px;
+    }
+
+    .filter-button {
+        height: 100%;
     }
 
     /**********************
@@ -541,6 +550,7 @@ footer {
 
     .filter-text {
         font-size: 11px;
+        white-space: nowrap;
     }
 
     /**********************
